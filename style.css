@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #2f4454;
+  padding: 20px 0;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #f5a1b8;
+  transition: color 0.3s ease;
+}
+
+header h1:hover {
+  color: #376e6f;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #da7b93;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('male-developer-entering-binary-data-terminal-panel.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.hero-section:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('african-american-young-programmer-wearing-headphone-while-typing-security-codes-business-website-working-rmeote-from-home-employee-programming-software-application-software-screen.jpg') no-repeat center center/cover;
+}
+
+.hero-section h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #376e6f;
+  transition: color 0.3s ease;
+}
+
+.hero-section h2:hover {
+  color: #f5a1b8;
+}
+
+.hero-section p {
+  font-size: 26px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.hero-section p:hover {
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: #376e6f;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #da7b93;
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-section {
+  background-color: #ffffff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill {
+  background: linear-gradient(135deg, #da7b93, #376e6f);
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill img {
+  max-width: 60%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-section, .education-section, .interests-section {
+  font-size: 20px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.education-section ul, .interests-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education-section li, .interests-section li {
+  margin-bottom: 10px;
+}
+
+.education-section a:hover, .interests-section a:hover {
+  text-decoration: underline;
+}
+
+.projects-section {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #376e6f;
+}
+
+.project p {
+  font-size: 16px;
+ color: #555;
+}
+
+.project p:hover {
+  color: #da7b93;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  
+}
+
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project a:hover {
+  text-decoration: none;
+  color: #da7b93;
+}
+
+.projects-section a {
+  color: #376e6f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.projects-section a:hover {
+  color: #da7b93;
+}
+
+.contact-section {
+  background-color: #f0f2f5;
+}
+
+#contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contactForm input, #contactForm textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus, #contactForm textarea:focus {
+  border-color: #376e6f;
+  outline: none;
+}
+
+#contactForm button[type="submit"] {
+  background-color: #376e6f;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+  background-color: #da7b93;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #2f4454;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
