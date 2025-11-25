@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "my-portfolio/portfolio-backend/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "my-portfolio/portfolio-frontend/vite.config.js",
+      "use": "@vercel/static-build",
+      "options": {
+        "outputDirectory": "my-portfolio/portfolio-frontend/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "my-portfolio/portfolio-backend/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "my-portfolio/portfolio-frontend/dist/$1"
+    }
+  ]
+}

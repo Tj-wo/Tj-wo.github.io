@@ -7,4 +7,15 @@ export default defineConfig({
   root: 'src',
   publicDir: '../public',
   plugins: [react()],
+  build: {
+    outDir: '../dist',
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:4000',
+        changeOrigin: true,
+      },
+    },
+  },
 })
