@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "my-portfolio/portfolio-frontend/vite.config.js",
+      "src": "my-portfolio/portfolio-frontend/package.json",
       "use": "@vercel/static-build"
     }
   ],
