@@ -16,8 +16,11 @@
       "dest": "my-portfolio/portfolio-backend/server.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "my-portfolio/portfolio-frontend/dist/$1"
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
     }
   ]
 }
