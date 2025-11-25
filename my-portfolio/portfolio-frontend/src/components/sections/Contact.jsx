@@ -17,7 +17,8 @@ export default function Contact() {
     };
 
     try {
-      const res = await fetch("http://localhost:4000/api/contact", {
+      // CHANGE: Use relative path instead of localhost
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
@@ -30,7 +31,7 @@ export default function Contact() {
           data = JSON.parse(text);
         }
       } catch (parseErr) {
-        console.error("JSON parse error:", parseErr, "Response text:", await res.clone().text());
+        console.error("JSON parse error:", parseErr);
       }
 
       if (res.ok) {
@@ -41,7 +42,7 @@ export default function Contact() {
       }
     } catch (err) {
       console.error("Contact form error:", err);
-      setStatus({ type: "error", message: "Network error. Ensure the backend is running at http://localhost:4000" });
+      setStatus({ type: "error", message: "An error occurred. Please try again later." });
     } finally {
       setLoading(false);
     }
