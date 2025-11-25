@@ -1,0 +1,4 @@
+/* Entry CSS - re-export existing styles so imports from main.jsx work */
+@import './style.css';
+
+/* You can also add global overrides here if needed. */
